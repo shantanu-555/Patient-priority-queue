@@ -15,7 +15,7 @@ typedef struct node {
 // Function to Create A New Node
 Node* newNode(char name[201], int age, int pri) {
   Node* temp = (Node*)malloc(sizeof(Node));
-  *temp->name = *name;
+  strcpy(temp->name, name);
   temp->age = age;
   temp->priority = pri;
   temp->next = NULL;
