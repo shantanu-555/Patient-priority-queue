@@ -7,7 +7,7 @@
 typedef struct node {
     char name[201];
     int age;
-    // Lower values indicate higher priority
+    // Higher values indicate higher priority
     int priority;
     struct node* next;
 } Node;
